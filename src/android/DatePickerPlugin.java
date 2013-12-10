@@ -246,7 +246,7 @@ public class DatePickerPlugin extends CordovaPlugin {
 			date.setHours(hourOfDay);
 			date.setMinutes(minute);
 
-			callbackContext.success(date.toLocaleString());
+			callbackContext.success(date.toGMTString());
 		}
 	}
 
